@@ -1,0 +1,5 @@
+{
+  "name": "ATS Resume Scanner & Role Matcher",
+  "description": "An intelligent resume analysis tool that calculates ATS scores, extracts key insights, and identifies the best-fit job role using Gemini AI.",
+  "requestFramePermissions": []
+}
