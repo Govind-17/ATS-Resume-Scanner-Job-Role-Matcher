@@ -56,45 +56,38 @@ This project helps candidates understand how well their resume matches a specifi
 
 ---
 
-📁 ats-resume-scanner-&-role-matcher/
+📁 ats-resume-scanner-&-role-matcher
+
+├── backend
+│   ├── main.py
+│   ├── config.py
+│   ├── models.py
+│   ├── roles.py
+│   └── services
+│       ├── parser.py
+│       ├── llm.py
+│       ├── keyword_scoring.py
+│       ├── role_detector.py
+│       ├── score_normalizer.py
+│       └── report_generator.py
 │
-├── 📄 .gitignore                    # Git ignore rules
-├── 📄 index.html                    # HTML entry point
-├── 📄 package.json                  # Node.js dependencies
-├── 📄 package-lock.json             # Lock file
-├── 📄 tsconfig.json                 # TypeScript config
-├── 📄 vite.config.ts                # Vite bundler config
-├── 📄 requirements.txt              # Python dependencies
-├── 📄 start_services.ps1            # PowerShell script to start services
-├── 📄 README.md                     # Project documentation
-├── 📄 metadata.json                 # Project metadata
+├── components
+│   ├── FileUpload.tsx
+│   ├── ResultsDashboard.tsx
+│   └── ScoreChart.tsx
 │
-├── 📄 App.tsx                       # Main React application
-├── 📄 index.tsx                     # React entry point
-├── 📄 types.ts                      # TypeScript type definitions
+├── reports
+├── tools
+│   └── tika-server-standard-3.0.0.jar
 │
-├── 📁 components/                   # React UI Components
-│   ├── 📄 FileUpload.tsx            # File upload component
-│   ├── 📄 ResultsDashboard.tsx      # Results display dashboard
-│   └── 📄 ScoreChart.tsx            # Score visualization chart
-│
-├── 📁 backend/                      # Python FastAPI Backend
-│   ├── 📄 main.py                   # FastAPI entry point & routes
-│   ├── 📄 config.py                 # Configuration settings
-│   ├── 📄 models.py                 # Pydantic models
-│   ├── 📄 roles.py                  # Job role definitions
-│   │
-│   └── 📁 services/                 # Core business logic
-│       ├── 📄 parser.py             # Resume text extraction
-│       ├── 📄 llm.py                # LLM (Ollama) integration
-│       ├── 📄 keyword_scoring.py    # Keyword-based scoring
-│       ├── 📄 role_detector.py      # Job role detection
-│       ├── 📄 score_normalizer.py   # Score normalization
-│       └── 📄 report_generator.py   # PDF report generation
-│
-├── 📁 reports/                      # Generated PDF reports (5 files)
-│
-├── 📁 tools/
-│   └── 📄 tika-server-standard-3.0.0.jar  # Apache Tika for document parsing
-│
-└── 📁 node_modules/                 # Node.js dependencies (not tracked)
+├── App.tsx
+├── index.tsx
+├── types.ts
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── requirements.txt
+├── README.md
+└── .gitignore
+
